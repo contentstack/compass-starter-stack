@@ -29,7 +29,3 @@ Refer to the [Seed command documentation](https://www.contentstack.com/docs/deve
 ### We have are own Next.js app, where you can view this content instantly.
 
 [Compass Starter Code Repo](https://github.com/contentstack/compass-starter-app)
-
-[LivePreview Website](https://compass-starter-preview.contentstackapps.com/)
-
-[Production Website](https://compass-starter.contentstackapps.com/)
