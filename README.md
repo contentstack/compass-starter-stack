@@ -1,6 +1,6 @@
 # Compass Starter Stack Content
 
-This repository aims to provide sample stack content to users for the implementation of compass starter app demo websites. An easy way to import this stack content is by using the ‘seed’ command.
+This repository aims to provide sample stack content with personalize project, experiences, audiences, attributes and variants to users for the implementation of compass starter app demo websites. An easy way to import this stack content is by using the ‘seed’ command.
 
 ### Note : Contentstack stack must have English as Master Language
 
@@ -8,7 +8,7 @@ To import this content to your stack, perform the following steps:
 
 1. Install the CLI by running the following command in your terminal:
 
-	```npm i -g @contentstack/cli@1.15.1``` 
+	```npm i -g @contentstack/cli@1.27.0``` 
 
 2. By default, CLI uses the North America region. To use the Europe region, run this command in your terminal:
 
@@ -29,3 +29,6 @@ Refer to the [Seed command documentation](https://www.contentstack.com/docs/deve
 ### We have are own Next.js app, where you can view this content instantly.
 
 [Compass Starter Code Repo](https://github.com/contentstack/compass-starter-app)
+
+## Documentation
+- [Contentstack personalize documentation](https://www.contentstack.com/docs/personalize)
