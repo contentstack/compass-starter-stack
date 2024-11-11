@@ -8,7 +8,7 @@ To import this content to your stack, perform the following steps:
 
 1. Install the CLI by running the following command in your terminal:
 
-	```npm i -g @contentstack/cli@1.27.0``` 
+	```npm i -g @contentstack/cli@1.28.1``` 
 
 2. By default, CLI uses the North America region. To use the Europe region, run this command in your terminal:
 
@@ -20,7 +20,7 @@ To import this content to your stack, perform the following steps:
 
 4. Run the ‘seed’ command to import content to your stack: 
 
-	```csdx cm:seed -r "contentstack/compass-starter-stack"```
+	```csdx cm:stacks:seed --repo "contentstack/compass-starter-stack" --locale "en"```
 
 Refer to the [Seed command documentation](https://www.contentstack.com/docs/developers/cli/import-content-using-the-seed-command/) to learn more. 
 
@@ -32,3 +32,7 @@ Refer to the [Seed command documentation](https://www.contentstack.com/docs/deve
 
 ## Documentation
 - [Contentstack personalize documentation](https://www.contentstack.com/docs/personalize)
+
+## Note
+To work with Visual Builder, your Contentstack Organization must have appropriate plan enabled.
+
