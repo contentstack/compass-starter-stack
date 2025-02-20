@@ -8,7 +8,7 @@ To import this content to your stack, perform the following steps:
 
 1. Install the CLI by running the following command in your terminal:
 
-	```npm i -g @contentstack/cli@1.28.1``` 
+	```npm i -g @contentstack/cli@1.32.1``` 
 
 2. By default, CLI uses the North America region. To use the Europe region, run this command in your terminal:
 
