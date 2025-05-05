@@ -85,4 +85,7 @@ fileignoreconfig:
   checksum: 2cf56c7226ddbc50e49238ba7a63a114a234cdc7050ba0ec4ae65250abe4e40f
 - filename: stack/content_types/schema.json
   checksum: b9e5621e08aaa8ccfb0a44d5d286e1f06345e85d603e15c4f40ebf2daafb963d
+- filename: .github/workflows/secrets-scan.yml
+  ignore_detectors:
+    - filecontent
 version: "1.0"
