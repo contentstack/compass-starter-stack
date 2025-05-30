@@ -1,6 +1,6 @@
 {
   "name": "compass-starter-stack",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "This repository aims to provide sample stack content to users for the implementation of compass starter app demo websites. An easy way to import this stack content is by using the seed command.This repository aims to provide sample stack content with personalize project, experiences, audiences, attributes and variants to users for the implementation of compass starter app demo websites. An easy way to import this stack content is by using the 'seed' command.",
   "engines": {
     "node": ">=18.17.0 <=22.14.0"
