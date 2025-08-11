@@ -1,140 +1,255 @@
 [
-    {
-        "params": {
-            "organization_uid": ""
-        },
-        "manifest": {
-            "uid": "6438f4bc3ff41c00184b6b78",
-            "name": "AI Assistant",
-            "description": "<p>Contentstack Marketplace lets you integrate the AI Assistant app to quickly and easily create summaries, outlines, metadata tags and descriptions, headlines, even full-length keyword-optimized blogs all with just a few clicks.</p><p>You can choose to generate, regenerate and replace content for the current field. Also, generate content for an entry field based on another field. You can also provide a custom command to manipulate the data based on your instructions.</p><p>With the Contentstack Entry Field UI location, you can access the AI Assistant app in different entry field types such as Title, Single Line Textbox, Multi-Line Textbox, HTML-based Rich Text Editor, JSON Rich Text Editor and Markdown.</p>",
-            "icon": "https://eu-images.contentstack.com/v3/assets/blt8f94ebff857fe1ae/blt76b8f8e813f5c61f/64395e27ee6de97ed7d65bc5/AI-Assistant.svg",
-            "ui_location": {
-                "locations": [
-                    {
-                        "type": "cs.cm.stack.config",
-                        "meta": [
-                            {
-                                "uid": "64394fb77587664755d9b0ad",
-                                "path": "/#/app-configuration",
-                                "signed": true,
-                                "enabled": true,
-                                "required": true
-                            }
-                        ]
-                    },
-                    {
-                        "type": "cs.cm.stack.rte",
-                        "meta": [
-                            {
-                                "uid": "65029c5233e260b4b5489607",
-                                "name": "AI Assistant",
-                                "path": "/json-rte.js",
-                                "signed": true,
-                                "enabled": true,
-                                "description": "The JsonRTE Field plugin location allows you to use AI Assistant on selected content."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "cs.cm.stack.field_modifier",
-                        "meta": [
-                            {
-                                "uid": "64394fce3ff9fd5bb4e72a3e",
-                                "name": "AI Assistant",
-                                "path": "/#/field-modifier",
-                                "signed": true,
-                                "enabled": true,
-                                "allowed_types": [
-                                    "text",
-                                    "tags",
-                                    "json"
-                                ],
-                                "description": "Entry Field UI location allows you to enable the AI Assistant app in different field types. "
-                            }
-                        ]
-                    }
-                ]
-            },
-            "visibility": "public",
-            "target_type": "stack",
-            "group": "user",
-            "organization_uid": "",
-            "framework_version": "1.0",
-            "version": 10,
-            "created_by": {
-                "uid": "",
-                "first_name": "",
-                "last_name": ""
-            },
-            "updated_by": {
-                "uid": "",
-                "first_name": "",
-                "last_name": ""
-            },
-            "created_at": "2023-04-14T06:37:48.170Z",
-            "updated_at": "2024-10-09T13:44:12.512Z"
-        },
-        "target": {
-            "type": "stack",
-            "uid": "blta410fff1d12f67b2"
-        },
-        "created_by": {
-            "uid": "",
-            "first_name": "",
-            "last_name": ""
-        },
-        "updated_by": {
-            "uid": "",
-            "first_name": "",
-            "last_name": ""
-        },
-        "organization_uid": "",
-        "status": "installed",
-        "created_at": "2024-04-26T05:11:48.157Z",
-        "updated_at": "2025-04-24T11:49:19.815Z",
-        "ui_location": {
-            "locations": [
-                {
-                    "type": "cs.cm.stack.config",
-                    "meta": [
-                        {
-                            "uid": "64394fb77587664755d9b0ad",
-                            "extension_uid": "blte54df8364d762681",
-                            "enabled": true,
-                            "name": "AI Assistant",
-                            "path": "/#/app-configuration"
-                        }
-                    ]
-                },
-                {
-                    "type": "cs.cm.stack.rte",
-                    "meta": [
-                        {
-                            "uid": "65029c5233e260b4b5489607",
-                            "extension_uid": "blt6de4157423f417d5",
-                            "enabled": true,
-                            "name": "AI Assistant",
-                            "path": "/json-rte.js"
-                        }
-                    ]
-                },
-                {
-                    "type": "cs.cm.stack.field_modifier",
-                    "meta": [
-                        {
-                            "uid": "64394fce3ff9fd5bb4e72a3e",
-                            "extension_uid": "blt9d2cbd0e1bf9562f",
-                            "enabled": true,
-                            "name": "AI Assistant",
-                            "path": "/#/field-modifier"
-                        }
-                    ]
-                }
+  {
+    "params": {
+      "organization_uid": ""
+    },
+    "manifest": {
+      "uid": "6438f4bc3ff41c00184b6b78",
+      "name": "AI Assistant",
+      "description": "<p>Contentstack Marketplace lets you integrate the AI Assistant app to quickly and easily create summaries, outlines, metadata tags and descriptions, headlines, even full-length keyword-optimized blogs all with just a few clicks.</p><p>You can choose to generate, regenerate and replace content for the current field. Also, generate content for an entry field based on another field. You can also provide a custom command to manipulate the data based on your instructions.</p><p>With the Contentstack Entry Field UI location, you can access the AI Assistant app in different entry field types such as Title, Single Line Textbox, Multi-Line Textbox, HTML-based Rich Text Editor, JSON Rich Text Editor and Markdown.</p>",
+      "icon": "https://eu-images.contentstack.com/v3/assets/blt8f94ebff857fe1ae/blt76b8f8e813f5c61f/64395e27ee6de97ed7d65bc5/AI-Assistant.svg",
+      "ui_location": {
+        "locations": [
+          {
+            "type": "cs.cm.stack.config",
+            "meta": [
+              {
+                "uid": "64394fb77587664755d9b0ad",
+                "path": "/#/app-configuration",
+                "signed": true,
+                "enabled": true,
+                "required": true
+              }
             ]
+          },
+          {
+            "type": "cs.cm.stack.rte",
+            "meta": [
+              {
+                "uid": "65029c5233e260b4b5489607",
+                "name": "AI Assistant",
+                "path": "/json-rte.js",
+                "signed": true,
+                "enabled": true,
+                "description": "The JsonRTE Field plugin location allows you to use AI Assistant on selected content."
+              }
+            ]
+          },
+          {
+            "type": "cs.cm.stack.field_modifier",
+            "meta": [
+              {
+                "uid": "64394fce3ff9fd5bb4e72a3e",
+                "name": "AI Assistant",
+                "path": "/#/field-modifier",
+                "signed": true,
+                "enabled": true,
+                "allowed_types": [
+                  "text",
+                  "tags",
+                  "json"
+                ],
+                "description": "Entry Field UI location allows you to enable the AI Assistant app in different field types. "
+              }
+            ]
+          }
+        ]
+      },
+      "visibility": "public",
+      "target_type": "stack",
+      "group": "user",
+      "organization_uid": "",
+      "framework_version": "1.0",
+      "version": 10,
+      "created_by": {
+        "uid": "blt96247f2c2802e6f4",
+        "first_name": "",
+        "last_name": "suthar"
+      },
+      "updated_by": {
+        "uid": "blt52bb13c8d02b30cf",
+        "first_name": "",
+        "last_name": "kanojia"
+      },
+      "created_at": "2023-04-14T06:37:48.170Z",
+      "updated_at": "2024-10-09T13:44:12.512Z"
+    },
+    "target": {
+      "type": "stack",
+      "uid": "blta410fff1d12f67b2"
+    },
+    "created_by": {
+      "uid": "blt26d1b9acb52848e6",
+      "first_name": "",
+      "last_name": ""
+    },
+    "updated_by": {
+      "uid": "blt26d1b9acb52848e6",
+      "first_name": "",
+      "last_name": ""
+    },
+    "organization_uid": "",
+    "status": "installed",
+    "created_at": "2024-04-26T05:11:48.157Z",
+    "updated_at": "2025-04-24T11:49:19.815Z",
+    "ui_location": {
+      "locations": [
+        {
+          "type": "cs.cm.stack.config",
+          "meta": [
+            {
+              "uid": "64394fb77587664755d9b0ad",
+              "extension_uid": "blte54df8364d762681",
+              "enabled": true,
+              "name": "AI Assistant",
+              "path": "/#/app-configuration"
+            }
+          ]
         },
-        "uid": "662b37949ff0a67d1ebb41b2",
-        "installation_uid": "662b37949ff0a67d1ebb41b2",
-        "urlPath": "/installations/662b37949ff0a67d1ebb41b2",
-        "configuration": ""
-    }
+        {
+          "type": "cs.cm.stack.rte",
+          "meta": [
+            {
+              "uid": "65029c5233e260b4b5489607",
+              "extension_uid": "blt6de4157423f417d5",
+              "enabled": true,
+              "name": "AI Assistant",
+              "path": "/json-rte.js"
+            }
+          ]
+        },
+        {
+          "type": "cs.cm.stack.field_modifier",
+          "meta": [
+            {
+              "uid": "64394fce3ff9fd5bb4e72a3e",
+              "extension_uid": "blt9d2cbd0e1bf9562f",
+              "enabled": true,
+              "name": "AI Assistant",
+              "path": "/#/field-modifier"
+            }
+          ]
+        }
+      ]
+    },
+    "uid": "662b37949ff0a67d1ebb41b2",
+    "installation_uid": "662b37949ff0a67d1ebb41b2",
+    "urlPath": "/installations/662b37949ff0a67d1ebb41b2",
+    "configuration": ""
+  },
+  {
+    "params": {
+      "organization_uid": ""
+    },
+    "manifest": {
+      "uid": "6836be3b60b35b0012711330",
+      "name": "Audience Insights",
+      "description": "<p></p><p>Supercharge your content strategy with the Audience Insights app from Contentstack Marketplace! Seamlessly integrate your Lytics Customer Data Platform and gain precise audience data analysis directly within your <a href=\"https://www.contentstack.com/cms-guides/headless-cms\">headless CMS</a>.</p><p></p><p>The app understands how well your content resonates with target audiences by leveraging behavioral and demographic data. Deliver your messaging to the right audience segments and make strategic content decisions that drive engagement. Whether you are analyzing individual entries or exploring trends across pages, the Audience Insights app provides powerful insights to boost your content performance.</p><p></p><p>Once installed, you can effortlessly analyze audience data and enhance your personalization strategies.</p>",
+      "icon": "https://eu-images.contentstack.com/v3/assets/blt8f94ebff857fe1ae/blt52c9a686a3ba9ed3/68382027c2c2459356aef65d/Audience_Insights.svg",
+      "ui_location": {
+        "locations": [
+          {
+            "type": "cs.cm.stack.entry_sidebar_rail",
+            "meta": [
+              {
+                "uid": "6838177064dba75641963ff9",
+                "name": "Audience Insights",
+                "path": "/entry-sidebar",
+                "signed": false,
+                "enabled": true,
+                "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMiIGhlaWdodD0iNDciIHZpZXdCb3g9IjAgMCA0MyA0NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5Ljg0OTYgMi4xMzM3OUMyMS4xMzc0IDIuMTMzNzkgMjIuMzk3NyAyLjI1NjMxIDIzLjYxOTEgMi40OTEyMUwyNC4xNDA2IDIuNTk4NjNMMjQuMjczNCAyLjYzNDc3QzI0LjkyMzQgMi44NDg3NSAyNS4zMTg0IDMuNTI1MzUgMjUuMTY4IDQuMjA4MDFDMjUuMDE3MyA0Ljg5MDM4IDI0LjM3NDkgNS4zMzY4NCAyMy42OTUzIDUuMjU3ODFMMjMuNTU4NiA1LjIzNTM1TDIzLjEwOTQgNS4xNDI1OEMyMi4wNTUgNC45Mzk3OSAyMC45NjUzIDQuODMzMDEgMTkuODQ5NiA0LjgzMzAxQzEwLjM3NzkgNC44MzMwMSAyLjY5OTIyIDEyLjUxMTcgMi42OTkyMiAyMS45ODM0QzIuNjk5MjIgMjUuMzc3MiAzLjY4NTc2IDI4LjU0MDQgNS4zODY3MiAzMS4yMDMxQzcuNzYyOTMgMjkuODU1IDExLjE3NzcgMjkuMDc1MyAxNC44NDQ3IDI5LjA3NTJDMTcuOTY2OCAyOS4wNzUyIDIwLjg2ODggMjkuNjM4MSAyMy4xMDk0IDMwLjYxMDRDMjMuNjQ0MiAzMC4wMTQgMjQuMzYzNSAyOS41NDcyIDI1LjEyOTkgMjkuMjA1MUMyNi4zNzA4IDI4LjY1MTEgMjcuOTEyNCAyOC4zMzc5IDI5LjU1MzcgMjguMzM3OUMzMC45OTkgMjguMzM3OSAzMi4zNjM2IDI4LjU4MDUgMzMuNTEyNyAyOS4wMTM3QzM0LjA4MzkgMjkuMjI5IDM0LjYyNTcgMjkuNTAwNyAzNS4xMDI1IDI5LjgzMDFDMzYuMzE0NyAyNy40Nzg2IDM3IDI0LjgxMTEgMzcgMjEuOTgzNEMzNyAyMC42MTIzIDM2LjgzOSAxOS4yODAzIDM2LjUzNjEgMTguMDA0OUMzNi4zNjQgMTcuMjc5NSAzNi44MTI3IDE2LjU1MjEgMzcuNTM4MSAxNi4zNzk5QzM4LjI2MzIgMTYuMjA3OSAzOC45OTA3IDE2LjY1NTggMzkuMTYzMSAxNy4zODA5QzM5LjUxNDEgMTguODU5MiAzOS42OTkyIDIwLjQwMDcgMzkuNjk5MiAyMS45ODM0QzM5LjY5OTIgMjkuMDE3OCAzNi4wNCAzNS4xOTcxIDMwLjUyMTUgMzguNzIyN0wzMy44MDM3IDQzLjk2NDhMMzMuODkwNiA0NC4xMjIxQzM0LjI4MjkgNDQuOTE3NSAzNC4wMTY4IDQ1Ljg5NyAzMy4yNDkgNDYuMzc3OUMzMi40ODEgNDYuODU4NSAzMS40ODM2IDQ2LjY3MDEgMzAuOTM5NSA0NS45Njk3TDMwLjgzNjkgNDUuODIzMkwyNy40MDUzIDQwLjM0MjhDMjUuMDc2MiA0MS4zMDIzIDIyLjUyNSA0MS44MzMgMTkuODQ5NiA0MS44MzNDOC44ODY3NiA0MS44MzMgMCAzMi45NDYzIDAgMjEuOTgzNEMwIDExLjAyMDUgOC44ODY3NiAyLjEzMzc5IDE5Ljg0OTYgMi4xMzM3OVpNMTQuODQ0NyAzMS43MDIxQzExLjYxNzggMzEuNzAyMiA4LjgzNDg1IDMyLjM2ODMgNi45ODYzMyAzMy4zMjUyQzEwLjEyOSAzNi44ODY3IDE0LjcyNjYgMzkuMTMzOCAxOS44NDk2IDM5LjEzMzhDMjAuMjUyMSAzOS4xMzM4IDIwLjY1MTMgMzkuMTE4MSAyMS4wNDY5IDM5LjA5MDhDMjIuMzkxNyAzOC42Mzg5IDIzLjQyNzEgMzguMDcwMSAyNC4xMDU1IDM3LjQ2OTdDMjQuODAwOCAzNi44NTQyIDI1LjAyNzMgMzYuMzAyMiAyNS4wMjczIDM1Ljg2MzNDMjUuMDI3MiAzNS4xNTEyIDI0LjM3NDggMzQuMTE0NyAyMi40MDkyIDMzLjE3ODdDMjAuNTQxMyAzMi4yODkzIDE3Ljg2ODEgMzEuNzAyMiAxNC44NDQ3IDMxLjcwMjFaTTI5LjU1MzcgMzAuNjI4OUMyOC4xODcgMzAuNjI5IDI2Ljk3MDQgMzAuODkyIDI2LjA2MzUgMzEuMjk2OUMyNS43MTMzIDMxLjQ1MzIgMjUuNDMyNiAzMS42MjEzIDI1LjIxIDMxLjc4NzFDMjYuNjIzNSAzMi44MDcyIDI3LjY1NTIgMzQuMTcwOCAyNy42NTUzIDM1Ljg2MzNDMjcuNjU1MiAzNi40MTM2IDI3LjU0MiAzNi45MzA3IDI3LjM0NDcgMzcuNDEyMUMyOS45ODQ0IDM2LjEyNzQgMzIuMjQ0MyAzNC4xODU0IDMzLjkxMzEgMzEuNzk4OEMzMy42MTI2IDMxLjU3MjYgMzMuMjEyMiAzMS4zNDg4IDMyLjcwNDEgMzEuMTU3MkMzMS44Mzk5IDMwLjgzMTUgMzAuNzUyNiAzMC42Mjg5IDI5LjU1MzcgMzAuNjI4OVpNMTQuODQyOCAxMy43NDcxQzE4Ljg5NDEgMTMuNzQ3MSAyMi4xNzg1IDE3LjAzMDggMjIuMTc4NyAyMS4wODJDMjIuMTc4NyAyNS4xMzM0IDE4Ljg5NDIgMjguNDE4IDE0Ljg0MjggMjguNDE4QzEwLjc5MTUgMjguNDE3OCA3LjUwNzgxIDI1LjEzMzMgNy41MDc4MSAyMS4wODJDNy41MDgwMiAxNy4wMzA5IDEwLjc5MTcgMTMuNzQ3MyAxNC44NDI4IDEzLjc0NzFaTTI5LjU0NDkgMTkuMDEwN0MzMi4wMjI2IDE5LjAxMDcgMzQuMDMxMiAyMS4wMTk0IDM0LjAzMTIgMjMuNDk3MUMzNC4wMzEyIDI1Ljk3NDcgMzIuMDIyNiAyNy45ODM0IDI5LjU0NDkgMjcuOTgzNEMyNy4wNjczIDI3Ljk4MzQgMjUuMDU4NyAyNS45NzQ3IDI1LjA1ODYgMjMuNDk3MUMyNS4wNTg2IDIxLjAxOTQgMjcuMDY3MiAxOS4wMTA4IDI5LjU0NDkgMTkuMDEwN1pNMTQuODQyOCAxNi4zNzRDMTIuMjQyOSAxNi4zNzQyIDEwLjEzNSAxOC40ODIyIDEwLjEzNDggMjEuMDgyQzEwLjEzNDggMjMuNjgyMSAxMi4yNDI4IDI1Ljc4OTggMTQuODQyOCAyNS43OUMxNy40NDI5IDI1Ljc5IDE5LjU1MDggMjMuNjgyMiAxOS41NTA4IDIxLjA4MkMxOS41NTA2IDE4LjQ4MiAxNy40NDI4IDE2LjM3NCAxNC44NDI4IDE2LjM3NFpNMjkuNTQ0OSAyMS4zMDE4QzI4LjMzMjUgMjEuMzAxOCAyNy4zNDk2IDIyLjI4NDYgMjcuMzQ5NiAyMy40OTcxQzI3LjM0OTcgMjQuNzA5NSAyOC4zMzI1IDI1LjY5MjMgMjkuNTQ0OSAyNS42OTI0QzMwLjc1NzQgMjUuNjkyNCAzMS43NDAyIDI0LjcwOTUgMzEuNzQwMiAyMy40OTcxQzMxLjc0MDIgMjIuMjg0NiAzMC43NTc0IDIxLjMwMTggMjkuNTQ0OSAyMS4zMDE4Wk0zNS45Njc4IDkuNzVDMzYuNjc0MiA5Ljc1MDIgMzcuMjQ2OCAxMC4zMjI5IDM3LjI0NzEgMTEuMDI5M0MzNy4yNDcxIDExLjczNTkgMzYuNjc0NCAxMi4zMDk0IDM1Ljk2NzggMTIuMzA5NkgyOS42Mjk5QzI4LjkyMzEgMTIuMzA5NiAyOC4zNTA2IDExLjczNjEgMjguMzUwNiAxMS4wMjkzQzI4LjM1MDggMTAuMzIyOCAyOC45MjMzIDkuNzUgMjkuNjI5OSA5Ljc1SDM1Ljk2NzhaTTM4Ljg5MjYgNC44NzVDMzkuNTk5IDQuODc1MTkgNDAuMTcxNyA1LjQ0Nzg0IDQwLjE3MTkgNi4xNTQzQzQwLjE3MTkgNi44NjA5NCAzOS41OTkyIDcuNDM0MzggMzguODkyNiA3LjQzNDU3SDI5LjYyOTlDMjguOTIzMSA3LjQzNDU3IDI4LjM0OTYgNi44NjEwNSAyOC4zNDk2IDYuMTU0M0MyOC4zNDk4IDUuNDQ3NzMgMjguOTIzMyA0Ljg3NSAyOS42Mjk5IDQuODc1SDM4Ljg5MjZaTTQwLjg0MTggMEM0MS41NDgzIDAuMDAwMjE1NTg5IDQyLjEyMDkgMC41NzI4MzQgNDIuMTIxMSAxLjI3OTNDNDIuMTIxMSAxLjk4NTkyIDQxLjU0ODQgMi41NTkzNSA0MC44NDE4IDIuNTU5NTdIMjkuNjI4OUMyOC45MjIxIDIuNTU5NTcgMjguMzQ5NiAxLjk4NjA1IDI4LjM0OTYgMS4yNzkzQzI4LjM0OTggMC41NzI3MDEgMjguOTIyMyAtMy4wODg4MmUtMDggMjkuNjI4OSAwSDQwLjg0MThaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTQ2NF8yMTMyKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0NjRfMjEzMiIgeDE9IjExLjk1NzMiIHkxPSIxMi42Mzk4IiB4Mj0iNDcuOTQ5OCIgeTI9IjM1LjAyOTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agb2Zmc2V0PSIwLjA5IiBzdG9wLWNvbG9yPSIjN0M0REZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3ODNGRiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+                "required": false
+              }
+            ]
+          },
+          {
+            "type": "cs.cm.stack.full_page",
+            "meta": [
+              {
+                "uid": "6838178b39cfa41df99f840c",
+                "name": "Audience Insights",
+                "path": "/full-page",
+                "signed": false,
+                "enabled": true,
+                "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMiIGhlaWdodD0iNDciIHZpZXdCb3g9IjAgMCA0MyA0NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5Ljg0OTYgMi4xMzM3OUMyMS4xMzc0IDIuMTMzNzkgMjIuMzk3NyAyLjI1NjMxIDIzLjYxOTEgMi40OTEyMUwyNC4xNDA2IDIuNTk4NjNMMjQuMjczNCAyLjYzNDc3QzI0LjkyMzQgMi44NDg3NSAyNS4zMTg0IDMuNTI1MzUgMjUuMTY4IDQuMjA4MDFDMjUuMDE3MyA0Ljg5MDM4IDI0LjM3NDkgNS4zMzY4NCAyMy42OTUzIDUuMjU3ODFMMjMuNTU4NiA1LjIzNTM1TDIzLjEwOTQgNS4xNDI1OEMyMi4wNTUgNC45Mzk3OSAyMC45NjUzIDQuODMzMDEgMTkuODQ5NiA0LjgzMzAxQzEwLjM3NzkgNC44MzMwMSAyLjY5OTIyIDEyLjUxMTcgMi42OTkyMiAyMS45ODM0QzIuNjk5MjIgMjUuMzc3MiAzLjY4NTc2IDI4LjU0MDQgNS4zODY3MiAzMS4yMDMxQzcuNzYyOTMgMjkuODU1IDExLjE3NzcgMjkuMDc1MyAxNC44NDQ3IDI5LjA3NTJDMTcuOTY2OCAyOS4wNzUyIDIwLjg2ODggMjkuNjM4MSAyMy4xMDk0IDMwLjYxMDRDMjMuNjQ0MiAzMC4wMTQgMjQuMzYzNSAyOS41NDcyIDI1LjEyOTkgMjkuMjA1MUMyNi4zNzA4IDI4LjY1MTEgMjcuOTEyNCAyOC4zMzc5IDI5LjU1MzcgMjguMzM3OUMzMC45OTkgMjguMzM3OSAzMi4zNjM2IDI4LjU4MDUgMzMuNTEyNyAyOS4wMTM3QzM0LjA4MzkgMjkuMjI5IDM0LjYyNTcgMjkuNTAwNyAzNS4xMDI1IDI5LjgzMDFDMzYuMzE0NyAyNy40Nzg2IDM3IDI0LjgxMTEgMzcgMjEuOTgzNEMzNyAyMC42MTIzIDM2LjgzOSAxOS4yODAzIDM2LjUzNjEgMTguMDA0OUMzNi4zNjQgMTcuMjc5NSAzNi44MTI3IDE2LjU1MjEgMzcuNTM4MSAxNi4zNzk5QzM4LjI2MzIgMTYuMjA3OSAzOC45OTA3IDE2LjY1NTggMzkuMTYzMSAxNy4zODA5QzM5LjUxNDEgMTguODU5MiAzOS42OTkyIDIwLjQwMDcgMzkuNjk5MiAyMS45ODM0QzM5LjY5OTIgMjkuMDE3OCAzNi4wNCAzNS4xOTcxIDMwLjUyMTUgMzguNzIyN0wzMy44MDM3IDQzLjk2NDhMMzMuODkwNiA0NC4xMjIxQzM0LjI4MjkgNDQuOTE3NSAzNC4wMTY4IDQ1Ljg5NyAzMy4yNDkgNDYuMzc3OUMzMi40ODEgNDYuODU4NSAzMS40ODM2IDQ2LjY3MDEgMzAuOTM5NSA0NS45Njk3TDMwLjgzNjkgNDUuODIzMkwyNy40MDUzIDQwLjM0MjhDMjUuMDc2MiA0MS4zMDIzIDIyLjUyNSA0MS44MzMgMTkuODQ5NiA0MS44MzNDOC44ODY3NiA0MS44MzMgMCAzMi45NDYzIDAgMjEuOTgzNEMwIDExLjAyMDUgOC44ODY3NiAyLjEzMzc5IDE5Ljg0OTYgMi4xMzM3OVpNMTQuODQ0NyAzMS43MDIxQzExLjYxNzggMzEuNzAyMiA4LjgzNDg1IDMyLjM2ODMgNi45ODYzMyAzMy4zMjUyQzEwLjEyOSAzNi44ODY3IDE0LjcyNjYgMzkuMTMzOCAxOS44NDk2IDM5LjEzMzhDMjAuMjUyMSAzOS4xMzM4IDIwLjY1MTMgMzkuMTE4MSAyMS4wNDY5IDM5LjA5MDhDMjIuMzkxNyAzOC42Mzg5IDIzLjQyNzEgMzguMDcwMSAyNC4xMDU1IDM3LjQ2OTdDMjQuODAwOCAzNi44NTQyIDI1LjAyNzMgMzYuMzAyMiAyNS4wMjczIDM1Ljg2MzNDMjUuMDI3MiAzNS4xNTEyIDI0LjM3NDggMzQuMTE0NyAyMi40MDkyIDMzLjE3ODdDMjAuNTQxMyAzMi4yODkzIDE3Ljg2ODEgMzEuNzAyMiAxNC44NDQ3IDMxLjcwMjFaTTI5LjU1MzcgMzAuNjI4OUMyOC4xODcgMzAuNjI5IDI2Ljk3MDQgMzAuODkyIDI2LjA2MzUgMzEuMjk2OUMyNS43MTMzIDMxLjQ1MzIgMjUuNDMyNiAzMS42MjEzIDI1LjIxIDMxLjc4NzFDMjYuNjIzNSAzMi44MDcyIDI3LjY1NTIgMzQuMTcwOCAyNy42NTUzIDM1Ljg2MzNDMjcuNjU1MiAzNi40MTM2IDI3LjU0MiAzNi45MzA3IDI3LjM0NDcgMzcuNDEyMUMyOS45ODQ0IDM2LjEyNzQgMzIuMjQ0MyAzNC4xODU0IDMzLjkxMzEgMzEuNzk4OEMzMy42MTI2IDMxLjU3MjYgMzMuMjEyMiAzMS4zNDg4IDMyLjcwNDEgMzEuMTU3MkMzMS44Mzk5IDMwLjgzMTUgMzAuNzUyNiAzMC42Mjg5IDI5LjU1MzcgMzAuNjI4OVpNMTQuODQyOCAxMy43NDcxQzE4Ljg5NDEgMTMuNzQ3MSAyMi4xNzg1IDE3LjAzMDggMjIuMTc4NyAyMS4wODJDMjIuMTc4NyAyNS4xMzM0IDE4Ljg5NDIgMjguNDE4IDE0Ljg0MjggMjguNDE4QzEwLjc5MTUgMjguNDE3OCA3LjUwNzgxIDI1LjEzMzMgNy41MDc4MSAyMS4wODJDNy41MDgwMiAxNy4wMzA5IDEwLjc5MTcgMTMuNzQ3MyAxNC44NDI4IDEzLjc0NzFaTTI5LjU0NDkgMTkuMDEwN0MzMi4wMjI2IDE5LjAxMDcgMzQuMDMxMiAyMS4wMTk0IDM0LjAzMTIgMjMuNDk3MUMzNC4wMzEyIDI1Ljk3NDcgMzIuMDIyNiAyNy45ODM0IDI5LjU0NDkgMjcuOTgzNEMyNy4wNjczIDI3Ljk4MzQgMjUuMDU4NyAyNS45NzQ3IDI1LjA1ODYgMjMuNDk3MUMyNS4wNTg2IDIxLjAxOTQgMjcuMDY3MiAxOS4wMTA4IDI5LjU0NDkgMTkuMDEwN1pNMTQuODQyOCAxNi4zNzRDMTIuMjQyOSAxNi4zNzQyIDEwLjEzNSAxOC40ODIyIDEwLjEzNDggMjEuMDgyQzEwLjEzNDggMjMuNjgyMSAxMi4yNDI4IDI1Ljc4OTggMTQuODQyOCAyNS43OUMxNy40NDI5IDI1Ljc5IDE5LjU1MDggMjMuNjgyMiAxOS41NTA4IDIxLjA4MkMxOS41NTA2IDE4LjQ4MiAxNy40NDI4IDE2LjM3NCAxNC44NDI4IDE2LjM3NFpNMjkuNTQ0OSAyMS4zMDE4QzI4LjMzMjUgMjEuMzAxOCAyNy4zNDk2IDIyLjI4NDYgMjcuMzQ5NiAyMy40OTcxQzI3LjM0OTcgMjQuNzA5NSAyOC4zMzI1IDI1LjY5MjMgMjkuNTQ0OSAyNS42OTI0QzMwLjc1NzQgMjUuNjkyNCAzMS43NDAyIDI0LjcwOTUgMzEuNzQwMiAyMy40OTcxQzMxLjc0MDIgMjIuMjg0NiAzMC43NTc0IDIxLjMwMTggMjkuNTQ0OSAyMS4zMDE4Wk0zNS45Njc4IDkuNzVDMzYuNjc0MiA5Ljc1MDIgMzcuMjQ2OCAxMC4zMjI5IDM3LjI0NzEgMTEuMDI5M0MzNy4yNDcxIDExLjczNTkgMzYuNjc0NCAxMi4zMDk0IDM1Ljk2NzggMTIuMzA5NkgyOS42Mjk5QzI4LjkyMzEgMTIuMzA5NiAyOC4zNTA2IDExLjczNjEgMjguMzUwNiAxMS4wMjkzQzI4LjM1MDggMTAuMzIyOCAyOC45MjMzIDkuNzUgMjkuNjI5OSA5Ljc1SDM1Ljk2NzhaTTM4Ljg5MjYgNC44NzVDMzkuNTk5IDQuODc1MTkgNDAuMTcxNyA1LjQ0Nzg0IDQwLjE3MTkgNi4xNTQzQzQwLjE3MTkgNi44NjA5NCAzOS41OTkyIDcuNDM0MzggMzguODkyNiA3LjQzNDU3SDI5LjYyOTlDMjguOTIzMSA3LjQzNDU3IDI4LjM0OTYgNi44NjEwNSAyOC4zNDk2IDYuMTU0M0MyOC4zNDk4IDUuNDQ3NzMgMjguOTIzMyA0Ljg3NSAyOS42Mjk5IDQuODc1SDM4Ljg5MjZaTTQwLjg0MTggMEM0MS41NDgzIDAuMDAwMjE1NTg5IDQyLjEyMDkgMC41NzI4MzQgNDIuMTIxMSAxLjI3OTNDNDIuMTIxMSAxLjk4NTkyIDQxLjU0ODQgMi41NTkzNSA0MC44NDE4IDIuNTU5NTdIMjkuNjI4OUMyOC45MjIxIDIuNTU5NTcgMjguMzQ5NiAxLjk4NjA1IDI4LjM0OTYgMS4yNzkzQzI4LjM0OTggMC41NzI3MDEgMjguOTIyMyAtMy4wODg4MmUtMDggMjkuNjI4OSAwSDQwLjg0MThaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTQ2NF8yMTMyKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0NjRfMjEzMiIgeDE9IjExLjk1NzMiIHkxPSIxMi42Mzk4IiB4Mj0iNDcuOTQ5OCIgeTI9IjM1LjAyOTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agb2Zmc2V0PSIwLjA5IiBzdG9wLWNvbG9yPSIjN0M0REZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3ODNGRiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      "visibility": "public_unlisted",
+      "target_type": "stack",
+      "group": "system",
+      "organization_uid": "",
+      "framework_version": "1.0",
+      "version": 6,
+      "created_by": {
+        "uid": "blt84c7dbee95981303",
+        "first_name": "",
+        "last_name": ""
+      },
+      "updated_by": {
+        "uid": "blt84c7dbee95981303",
+        "first_name": "",
+        "last_name": ""
+      },
+      "created_at": "2025-05-28T07:41:47.398Z",
+      "updated_at": "2025-05-30T17:44:13.262Z"
+    },
+    "target": {
+      "type": "stack",
+      "uid": "blta410fff1d12f67b2"
+    },
+    "created_by": {
+      "uid": "bltd8c8c6268e338ba5",
+      "first_name": "",
+      "last_name": ""
+    },
+    "updated_by": {
+      "uid": "bltd8c8c6268e338ba5",
+      "first_name": "",
+      "last_name": ""
+    },
+    "organization_uid": "",
+    "status": "installed",
+    "internal": {
+      "digital_property_uid": "bltb800624ad44c4152",
+      "lytics_account_id": "6951d8017c960623159d72bf52df2630",
+      "job_id": "64f04f6d-dffc-4177-8cad-2bb55c281108"
+    },
+    "created_at": "2025-07-29T07:58:11.120Z",
+    "updated_at": "2025-07-29T07:58:11.770Z",
+    "ui_location": {
+      "locations": [
+        {
+          "type": "cs.cm.stack.entry_sidebar_rail",
+          "meta": [
+            {
+              "uid": "6838177064dba75641963ff9",
+              "extension_uid": "bltc5c5ed751ba94632",
+              "enabled": true,
+              "name": "Audience Insights",
+              "path": "/entry-sidebar"
+            }
+          ]
+        },
+        {
+          "type": "cs.cm.stack.full_page",
+          "meta": [
+            {
+              "uid": "6838178b39cfa41df99f840c",
+              "extension_uid": "bltb9e78facdb89298f",
+              "enabled": true,
+              "name": "Audience Insights",
+              "path": "/full-page"
+            }
+          ]
+        }
+      ]
+    },
+    "uid": "68887f13d212e807032238bd",
+    "installation_uid": "68887f13d212e807032238bd",
+    "urlPath": "/installations/68887f13d212e807032238bd"
+  }
 ]
