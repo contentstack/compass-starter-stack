@@ -56,6 +56,7 @@
         ]
       },
       "visibility": "public",
+      "type": "app",
       "target_type": "stack",
       "group": "user",
       "organization_uid": "",
@@ -179,6 +180,7 @@
         ]
       },
       "visibility": "public_unlisted",
+      "type": "app",
       "target_type": "stack",
       "group": "system",
       "organization_uid": "",
