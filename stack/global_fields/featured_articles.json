@@ -1,0 +1,59 @@
+{
+  "title": "Featured Articles",
+  "uid": "featured_articles",
+  "description": "The Featured Articles will always be rendered at the end of the page through the Render method in the code base.",
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Heading",
+      "uid": "heading",
+      "field_metadata": {
+        "description": "",
+        "default_value": "Popular Articles",
+        "placeholder": "Heading"
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Sub Heading",
+      "uid": "sub_heading",
+      "field_metadata": {
+        "description": "",
+        "default_value": "A small description which can describe Popular Articles Section",
+        "placeholder": "Sub-heading"
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "reference",
+      "display_name": "Articles",
+      "reference_to": [
+        "article"
+      ],
+      "field_metadata": {
+        "ref_multiple": true,
+        "ref_multiple_content_types": true
+      },
+      "uid": "articles",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ]
+}

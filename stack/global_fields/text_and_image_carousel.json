@@ -1,0 +1,272 @@
+{
+  "title": "Text and Image Carousel",
+  "uid": "text_and_image_carousel",
+  "description": "",
+  "schema": [
+    {
+      "data_type": "group",
+      "display_name": "Carousel Items",
+      "field_metadata": {
+        "description": "",
+        "instruction": ""
+      },
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Heading",
+          "uid": "heading",
+          "field_metadata": {
+            "description": "Please add the heading of the section.",
+            "default_value": "Section Heading",
+            "placeholder": "Heading",
+            "isTitle": true
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Content",
+          "uid": "content",
+          "field_metadata": {
+            "description": "Please add the paragraph.",
+            "default_value": "Content required for describe the section heading. Better to have 5 to 7 lines of description.",
+            "multiline": true,
+            "placeholder": "Content"
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "file",
+          "display_name": "Image",
+          "uid": "image",
+          "field_metadata": {
+            "description": "For optimal website performance, it is recommended to use images with a file size of not more than 10 MB.",
+            "rich_text_type": "standard",
+            "image": true
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false,
+          "dimension": {
+            "width": {
+              "min": null,
+              "max": null
+            },
+            "height": {
+              "min": null,
+              "max": null
+            }
+          }
+        },
+        {
+          "data_type": "text",
+          "display_name": "Image Alt Text",
+          "uid": "image_alt_text",
+          "field_metadata": {
+            "description": "Please add the alt text to the image.",
+            "default_value": "Alt Text for Image in Section",
+            "placeholder": "Image Alt Text"
+          },
+          "format": "",
+          "error_messages": {
+            "format": ""
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "boolean",
+          "display_name": "Is Thumbnail",
+          "uid": "is_thumbnail",
+          "field_metadata": {
+            "description": "This helps in reducing the size of images using Contentstack Image optimization techniques. To view the result enable `Is Thumbnail` and publish the entry.",
+            "default_value": false
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "group",
+          "display_name": "CTA",
+          "field_metadata": {
+            "description": "",
+            "instruction": ""
+          },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Text",
+              "uid": "text",
+              "field_metadata": {
+                "description": "",
+                "default_value": "Text for describing call to action",
+                "isTitle": true,
+                "placeholder": "CTA Text"
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "reference",
+              "display_name": "Link",
+              "reference_to": [
+                "landing_page",
+                "home_page",
+                "article_listing_page",
+                "article"
+              ],
+              "field_metadata": {
+                "ref_multiple": false,
+                "ref_multiple_content_types": true
+              },
+              "uid": "link",
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "text",
+              "display_name": "External URL",
+              "uid": "external_url",
+              "field_metadata": {
+                "description": "",
+                "default_value": ""
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            }
+          ],
+          "uid": "cta",
+          "mandatory": false,
+          "multiple": true,
+          "non_localizable": false,
+          "unique": false,
+          "max_instance": 1
+        },
+        {
+          "data_type": "group",
+          "display_name": "Styles",
+          "field_metadata": {
+            "description": "",
+            "instruction": ""
+          },
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Theme",
+              "display_type": "dropdown",
+              "enum": {
+                "advanced": true,
+                "choices": [
+                  {
+                    "value": "light",
+                    "key": "Light"
+                  },
+                  {
+                    "value": "dark",
+                    "key": "Dark"
+                  }
+                ]
+              },
+              "multiple": false,
+              "uid": "theme",
+              "field_metadata": {
+                "description": "",
+                "default_value": "light",
+                "default_key": "Light"
+              },
+              "mandatory": false,
+              "non_localizable": false,
+              "unique": false
+            }
+          ],
+          "uid": "styles",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "carousel_items",
+      "mandatory": false,
+      "multiple": true,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Styles",
+      "field_metadata": {
+        "description": "",
+        "instruction": ""
+      },
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Image position",
+          "display_type": "dropdown",
+          "enum": {
+            "advanced": true,
+            "choices": [
+              {
+                "value": "right",
+                "key": "Right"
+              },
+              {
+                "value": "left",
+                "key": "Left"
+              }
+            ]
+          },
+          "multiple": false,
+          "uid": "image_position",
+          "field_metadata": {
+            "description": "Please select the image position.",
+            "default_value": "right",
+            "default_key": "Right"
+          },
+          "mandatory": true,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "styles",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ]
+}
